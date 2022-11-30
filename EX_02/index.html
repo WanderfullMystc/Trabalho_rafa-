@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/EX_02/style.css">
+    <title>Hora  </title>
+</head>
+<body>
+    <div class="background">
+        <div class="centerBox">
+            <form>
+                <div class="entrada">
+                    <label for="hTrabalhada">Horas trabalhadas/mes</label><br>
+                    <input type="number" id="hTrabalhada"><br>
+
+                    <label for="hSalario">Salario/Hora</label><br>
+                    <input type="number" id="hSalario"><br>
+
+                </div>
+
+                <div class="resposta">
+                    <div class="votosBrancos">
+                        <p>HORA EXTRA</p>
+                        <p id="hora_Extra">0</p>
+                    </div>
+                </div>
+
+                <button onclick="hExtra()" class="buttonCal">Calcular</button>
+
+            </form>    
+        </div>
+    </div>
+    <script src="/EX_02/index.js"></script>
+</body>
+</html>
