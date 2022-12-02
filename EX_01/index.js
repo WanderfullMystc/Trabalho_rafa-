@@ -1,16 +1,16 @@
+let numEleitores = document.getElementById('numEleitores');
+let votosBranco = document.getElementById('votosBranco');
+let votosNulo = document.getElementById('votosNulo');
+let votosValido = document.getElementById('votosValido');
 
 function relacao() {
-    let numEleitores = document.getElementById('numEleitores').value;
-    let votosBranco = document.getElementById('votosBranco').value;
-    let votosNulo = document.getElementById('votosNulo').value;
-    let votosValido = document.getElementById('votosValido').value;
     
-    // if(Number(numEleitores) < Number(votosBranco + votosNulo + votosValido)){
-    //     window.alert('O numero de votos adicionados supera o numero de Eleitores');
-    //     console.log("drugcornio");    
-    // }
-    document.getElementById('relBrancos').innerHTML = (votosBranco*100/numEleitores + '%');
-    document.getElementById('relNulos').innerHTML = (votosNulo*100/numEleitores + '%');
-    document.getElementById('relValidos').innerHTML = (votosValido*100/numEleitores + '%');
+    if(numEleitores.value < (Number(votosBranco.value) + Number(votosNulo.value) + Number(votosValido.value))){
+        window.alert('O numero de votos adicionados supera o numero de Eleitores');
+        return;
+    }
+    document.getElementById('relBrancos').innerHTML = (votosBranco.value*100/numEleitores.value + '%');
+    document.getElementById('relNulos').innerHTML = (votosNulo.value*100/numEleitores.value + '%');
+    document.getElementById('relValidos').innerHTML = (votosValido.value*100/numEleitores.value + '%');
 
 }

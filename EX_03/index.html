@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/EX_03/style.css">
-    <title>Document</title>
+    <title>Banco</title>
 </head>
 <body>
-  
+    <div class="background">
+        <div class="centerBox">
+            <form>
+                <div class="entrada">
+                    <label for="nConta">N° da conta</label><br>
+                    <input type="number" id="nConta"><br>
+
+                    <label for="saldo">Saldo</label><br>
+                    <input type="number" id="saldo"><br>
+
+                    <label for="credito">Credito</label><br>
+                    <input type="number" id="credito"><br>
+
+                    <label for="debito">Debito</label><br>
+                    <input type="number" id="debito"><br>
+                </div>
+
+                <div class="saida">
+                    <div class="votosBrancos">
+                        <p>Status</p>
+                        <p id="status"></p>
+                    </div>
+            
+                </div>
+                <input type="button" onclick="status()" value="Calcular" class="buttonCal">
+            </form>    
+        </div>
+    </div>
     <script src="/EX_03/index.js"></script>
 </body>
 </html>

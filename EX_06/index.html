@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/EX_06/style.css">
-    <title>Document</title>
+    <title>Governo </title>
 </head>
 <body>
-  
+    <div class="background">
+        <div class="centerBox">
+        <div class="title">
+            <p>Login</p>
+        </div>
+            <form>
+                <div class="votosVal">
+                    <label for="loginNome">Usuario</label><br>
+                    <input type="text" id="loginNome"><br>
+
+                    <label for="loginSenha">Senha</label><br>
+                    <input type="password" id="loginSenha"><br>
+
+                </div>
+
+                <div class="porsentagem">
+                    <p id="resposta"></p>
+                </div>
+                <input type="button" onclick="login()" value="Login" class="submitButton">
+                <input type="button" onclick="limpar()" value="Reset" class="resetButton">
+            </form>    
+        </div>
+    </div>
     <script src="/EX_06/index.js"></script>
 </body>
 </html>

@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/EX_05/style.css">
-    <title>Document</title>
+    <title>Mercado</title>
 </head>
 <body>
-  
+    <div class="background">
+        <div class="centerBox">
+            <form>
+                <div class="votosVal">
+                    <label for="p_nome">Nome do produto</label><br>
+                    <input type="text" id="p_nome"><br>
+
+                    <label for="p_quantidade">Quantidade do produto</label><br>
+                    <input type="text" id="p_quantidade"><br>
+
+                    <label for="p_preco">Preço unitario</label><br>
+                    <input type="text" id="p_preco"><br>
+
+                </div>
+
+                <div class="resultado">
+                    <p id="total_desconto">0</p>
+                    <p>Preço Total</p>
+                    <p id="preco_final">0</p>
+                </div>
+                <input type="button" onclick="precoTotal()" value="Calcular" class="buttonCal">
+            </form>    
+        </div>
+    </div>
     <script src="/EX_05/index.js"></script>
 </body>
 </html>

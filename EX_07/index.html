@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/EX_07/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/EX_01/style.css">
+    <title>Governo </title>
 </head>
 <body>
-  
-    <script src="/EX_07/index.js"></script>
+    <div class="background">
+        <div class="centerBox">
+            <form>
+                <div class="votosVal">
+                    <label for="numEleitores">Numero de eleitores</label><br>
+                    <input type="number" id="numEleitores"><br>
+
+                    <label for="votosBranco">Votos em branco</label><br>
+                    <input type="number" id="votosBranco"><br>
+
+                    <label for="votosNulo">Votos nulos</label><br>
+                    <input type="number" id="votosNulo"><br>
+
+                    <label for="votosValido">Votos validos</label><br>
+                    <input type="number" id="votosValido"><br>
+                </div>
+
+                <div class="porsentagem">
+                    <div class="votosBrancos">
+                        <p id="relBrancos">0</p>
+                        <p>VOTOS EM BRANCO</p>
+                    </div>
+            
+                    <div class="votosNulos">
+                        <p id="relNulos">0</p>
+                        <p>VOTOS NULOS</p>
+                    </div>
+
+                    <div class="votosValidos">
+                        <p id="relValidos">0</p>
+                        <p>VOTOS VALIDOS</p>
+                    </div>
+                </div>
+                <input type="button" onclick="relacao()" value="Calcular" class="buttonCal">
+            </form>    
+        </div>
+    </div>
+    <script src="/EX_01/index.js"></script>
 </body>
 </html>

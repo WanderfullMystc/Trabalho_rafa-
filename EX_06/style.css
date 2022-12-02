@@ -1,0 +1,36 @@
+
+.centerBox
+{
+    border: 1px solid #101010;
+    position: relative;
+    width: 300px;
+	text-align: center;
+	margin: auto;
+    border-radius: 15px;
+}
+.title
+{
+    border: 1px solid #101010;
+    position: relative;
+	text-align: center;
+    border-radius: 15px;
+    
+}
+.submitButton
+{
+    border: 1px solid #101010;
+    position: relative;
+    width: 300px;
+	text-align: center;
+	margin: auto;
+    border-radius: 1px;
+}
+.resetButton
+{
+    border: 1px solid #101010;
+    position: relative;
+    width: 300px;
+	text-align: center;
+	margin: auto;
+    border-radius: 1px;
+}

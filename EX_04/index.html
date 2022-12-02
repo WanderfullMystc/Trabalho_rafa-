@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/EX_04/style.css">
-    <title>Document</title>
+    <title>Idade</title>
 </head>
 <body>
-  
+    <div class="background">
+        <div class="centerBox">
+            <form>
+                <div class="votosVal">
+                    <label for="idade_1">Idade de Diego</label><br>
+                    <input type="text" id="idade_1"><br>
+
+                    <label for="idade_2">Idade de Gabriel</label><br>
+                    <input type="text" id="idade_2"><br>
+
+                    <label for="idade_3">Idade de Grazi</label><br>
+                    <input type="text" id="idade_3"><br>
+
+                    <label for="idade_4">Idade de Amanda</label><br>
+                    <input type="text" id="idade_4"><br>
+                </div>
+
+                <div class="porsentagem">
+                    <div class="idadeVN">
+                        <p>Soma do mais velho com  o mais nova</p>
+                        <p id="oldMan+newWoman">0</p>
+                    </div>
+            
+                    <div class="idadeNV">
+                        <p>Soma da mais velha com o mais novo</p>
+                        <p id="oldWoman-newMan">0</p>
+                    </div>
+                </div>
+                <input type="button" onclick="relacao()" value="Calcular" class="buttonCal">
+            </form>    
+        </div>
+    </div>
     <script src="/EX_04/index.js"></script>
 </body>
 </html>

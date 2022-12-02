@@ -60,6 +60,8 @@ button
 }
 .buttonCal 
 {
+    margin: 5%;
+    padding: 5%;
     background-color: white; 
     color: rgb(40, 40, 40); 
     border: 1px solid #878DB0;
