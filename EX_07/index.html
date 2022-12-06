@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/EX_01/style.css">
+    <link rel="stylesheet" href="/EX_07/style.css">
     <title>Governo </title>
 </head>
 <body>
-    <div class="background">
-        <div class="centerBox">
-            <form>
-                <div class="votosVal">
-                    <label for="numEleitores">Numero de eleitores</label><br>
-                    <input type="number" id="numEleitores"><br>
+    <div class="blankPage">
+        <div class="middlePage">
+            <div class="header">
+                <h1>Pesquisa entre habitantes</h1>
+            </div>
+            <div  class="inPut">
+                <form>
+                    <input type="text" id="nome" placeholder="Nome do cidadão"/>
+                    <input type="text" id="numFilhos" placeholder="Num. Filhos"/>
+                    <input type="text" id="salario" placeholder="Salário (R$)"/>
+                    <input type="button" id="add" value="Adicionar"/>
+                </form>
+            </div>
+            <div class="tabela">
+                <table>
+                    <thead id="tabelaH">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Número de filhos</th>
+                            <th>Salário</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaB">
+                     
+                    </tbody>
+                </table>
+            </div>
+            <div class="info">
+                <h1>Informações Gerais</h1><br>
+                <p>Média de salário da população: </p><p id="media_salario"></p>
+                <p>Média do número de filhos: </p><p id="media_filhos/as"></p>
+                <p>Maior salário dos habitantes: </p><p id="max_salario"></p>
+                <p>Percentual de pessoas com salário menor que R$ 1.500,00: </p><p id="porsentual_minSalario"></p>
+            </div>
+            <div class="refresh">
+                <button id="refresh">Atualizar dados</button>
+            </div>
 
-                    <label for="votosBranco">Votos em branco</label><br>
-                    <input type="number" id="votosBranco"><br>
-
-                    <label for="votosNulo">Votos nulos</label><br>
-                    <input type="number" id="votosNulo"><br>
-
-                    <label for="votosValido">Votos validos</label><br>
-                    <input type="number" id="votosValido"><br>
-                </div>
-
-                <div class="porsentagem">
-                    <div class="votosBrancos">
-                        <p id="relBrancos">0</p>
-                        <p>VOTOS EM BRANCO</p>
-                    </div>
-            
-                    <div class="votosNulos">
-                        <p id="relNulos">0</p>
-                        <p>VOTOS NULOS</p>
-                    </div>
-
-                    <div class="votosValidos">
-                        <p id="relValidos">0</p>
-                        <p>VOTOS VALIDOS</p>
-                    </div>
-                </div>
-                <input type="button" onclick="relacao()" value="Calcular" class="buttonCal">
-            </form>    
         </div>
     </div>
-    <script src="/EX_01/index.js"></script>
+    <script src="/EX_07/index.js"></script>
 </body>
 </html>
